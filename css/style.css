@@ -1,0 +1,415 @@
+body{
+	height: 100%;
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+}
+header{
+	z-index: 10;
+	position: fixed;
+	border-bottom: 1px solid;
+	box-sizing: border-box;
+	width: 100%;
+	background: #ffffff;
+	min-width: 500px;
+}
+.container{
+	position: relative;
+	box-sizing: border-box;
+	font-size: 0px;
+	padding: 10px;
+}
+.container a{
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 15px;
+	font-family: Verdana, sans-serif; 
+	color:#82371b;
+	text-decoration: none;
+}
+.container a:hover{
+	color: black;
+	border-bottom: 3px solid black;
+	}
+.language1{
+	position: absolute;
+	right: 94px;
+	top: 0px;
+}
+.language2{
+	position: absolute;
+	right: 20px;
+	top: 0px;
+}
+.img{
+	text-align: center;
+	font-size: 20px;
+	font-family: Verdana, sans-serif; 
+	color:#82371b;
+}
+.img img{
+	padding: 5px;
+    width: 35px;
+    height: 40px;
+}
+.informacion {
+	display:inline-block;
+	position: relative;
+    z-index: 9;
+    background: black;
+    padding: 10px;
+    margin: auto;
+    width: 800px;
+    top: 120px;
+}
+footer{
+	position: relative;
+	top: 120px;
+	margin:auto;
+	height: 150px;
+	background: #242424;
+}
+.copyright-text {
+    color: #696969;
+    padding-left: 50px;
+}
+.sponsors{
+	
+}
+.sponsors a img{
+	width: 100px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.news{
+	width: 800px;
+    margin: auto;
+    height: 350px;
+}
+.informacion .news .item{
+	position: relative;
+    float: left;
+    width: 400px;
+    height: 350px;
+	background: #242424;
+}
+.informacion .news .item:hover{
+/*	opacity:0.3;*/
+	cursor: pointer;
+	-webkit-transform: scale(0.9);
+ -moz-transform: scale(0.9);
+ -o-transform: scale(0.9);
+	}
+.owl-carousel .owl-nav button.owl-next{
+	position: absolute;
+    margin-top: -300px;
+    color: white;
+    right: 0px;
+    font-size: 60px !important;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	position: absolute;
+    margin-top: -300px;
+    color: white;
+    left: 0px;
+    font-size: 60px !important;
+}
+.content{
+	height: 120px;
+	position: absolute;
+	width: 100%;
+	background: black;
+	opacity: 0.85;
+	color: white;
+	bottom: 0px;
+	font-size: 15PX;
+}
+.content p{
+	text-align: center;
+    font-size: 25PX;
+    font-family: Verdana, sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+.item img{
+	width: 400px;
+	height: 350px;
+}
+.content h4{
+	padding: 10px;
+	margin: 0px;
+}
+/*____________________news__________________________________________________________*/
+
+.new-informacion{
+	position: relative;
+    z-index: 9;
+    background: black;
+    padding: 10px;
+    margin: auto;
+    width: 800px;
+    top: 120px;
+}
+.news-item img{
+	max-width: 780px;
+    display: block;
+    margin: 0 auto;
+	/*width: 780px;
+	height: 400px;*/
+}
+.news-content{
+	color:white;
+}
+.news-item{
+	margin: auto;
+    width: 780px;
+    border-bottom: 1px solid #403d3d;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.news-item p{
+	text-align:center;
+	font-size: 25px;
+	font-family: Verdana, sans-serif;
+	padding: 3px;
+	color: white;
+}
+
+/*_______________________comand_________________________________________________-*/
+
+.content-player{
+	width: 776px;
+    padding: 10px;
+}
+.logo-comand {
+	padding: 10px;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+.player{
+	padding: 8px;
+    display: inline-block;
+    font-size: 0px;
+    color: black;
+}
+.player img{
+	border-radius: 10px 10px 0px 0px;
+    width: 240px;
+    height: 280px;
+}
+.info-player{
+    height: 76px;
+    background: white;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nomber{
+	padding: 5px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*________________table________________________________________________*/
+.new-informacion h1{
+	font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+	color: white;
+    text-align: center;
+}
+.table{
+	border-spacing: 0px;
+    width: 100%;
+    background: white;
+}
+.position {
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	background: white;
+}
+.position2 {
+	background: #9E9E9E;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+}
+.position2:hover{
+	background: #ffffff;
+	cursor: default;
+}
+/*_____________calendar_________________*/
+.calendar  td{
+	text-align: center;
+}
+/*________________history__________________________*/
+.history-item{
+	margin: auto;
+    width: 780px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.history-item p{
+	text-align:center;
+	font-size: 25px;
+	font-family: Verdana, sans-serif;
+	padding: 3px;
+	color: white;
+}
+.history-content p{
+	text-align: justify;
+	font-size: 15px;
+	color: white;
+	text-indent: 28px;
+}
+/*__________login______________________*/
+.login{
+	width: 400px;
+	margin: auto;
+	border:1px solid black;
+	padding: 20px;
+	margin-top: 100px;
+}
+.btn{
+	cursor:pointer;
+	width: 100%;
+	padding: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	text-align: center;
+	box-sizing: border-box;
+}
+.login form{
+	width: 170px;
+	margin: auto;
+}
+.login form input, .login form .btn{
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	margin-top: 10px;
+}
+/*_______________admin____________*/
+.admin img{
+	width: 45px;
+	padding: 15px;
+}
+.admin{
+	background: #353942;
+    height: 100vh;
+    display: inline-block;
+}
+.admin .admin-panel{
+	color:#707682;
+	font-family: Verdana, sans-serif;
+	cursor:pointer;
+	padding: 10px;
+	border-bottom: 1px solid;
+}
+.items-wrapper{
+    display: none;
+    border-left: 1px solid #707682;
+    background: #707682;
+}
+.items-wrapper .q #lowNews{
+	width: 99.5%;
+	resize: none;
+	min-height: 280px;
+}
+#table-wrapper input{
+	display: block;
+}
+.btn{
+	background:black;
+	border: 1px solid;
+	cursor: pointer;
+	color: white;
+	padding: 5px 10px;
+}
+.btn:hover{
+	background: white;
+	color: black;
+}
+#calendar-wrapper input{
+	display: block;
+}
+#slaider-wrapper input{
+	display: block;
+}
+.comandgame{
+	display: none;
+	margin-top: 290px;
+	width: 268px;
+    position: absolute;
+}
+.comandgame .players{
+	color:#707682;
+	font-family: Verdana, sans-serif;
+	cursor:pointer;
+	padding: 10px;
+	border-bottom: 1px solid;
+}
+.items-wrapper .Gcomand{
+	padding: 10px;
+	font-family: Verdana, sans-serif;
+	width: 200px;
+}
+.btnaddgames{
+	background: #03A9F4;
+    border-radius: 14px 14px 14px 14px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+ }
+ .btnaddgames:hover{
+ 	cursor: pointer;
+ 	color: red;
+ }
+.newplayer{
+	display: none;
+}
+.newplayer input{
+	display: block;
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+}
+.wrapper .admin, .wrapper .menu-container{
+	display: inline-block;
+	vertical-align: top;
+}
+.wrapper .menu-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.menu-container .items-wrapper .news {
+	width: 100%;
+	margin: auto;
+}
+.menu-container .items-wrapper .news .item{
+	width: 100%;
+	margin: auto;
+	border:1px solid black;
+}
+ .items-wrapper #turtable{
+	display: block;
+}
+.items-wrapper #turtable input{
+	display: block;
+}

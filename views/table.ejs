@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%-include('link')%>
+	<title>Турнирная таблица</title>
+</head>
+<meta charset="utf-8">
+<body>
+	<%-include('header')%>
+<div class="new-informacion">
+	<h1>
+		Турнирная таблица. Прьемьер лига
+	</h1>
+	<table class="table">
+		<tr class="position">
+			<td>М</td>
+			<td>КОМАНДА</td>
+			<td>И</td>
+			<td>В</td>
+			<td>Н</td>
+			<td>П</td>
+			<td>З</td>
+			<td>П</td>
+			<td>О</td>
+		</tr>
+		<%for(var i = 1;i<result.length;i++){%>
+			<tr class="position2">
+				<td><%-i%></td>
+				<td><%-result[i].Tcommand%></td>
+				<td><%-result[i].Tgames%></td>
+				<td><%-result[i].Twin%></td>
+				<td><%-result[i].Tdraw%></td>
+				<td><%-result[i].Tloss%></td>
+				<td><%-result[i].Tculled%></td>
+				<td><%-result[i].Tomitted%></td>
+				<td><%-result[i].Tpoint%></td>
+			</tr>
+		<%}%>
+	</table>
+</div>
+<%-include('footer')%>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <%-include('link')%>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="admin" >
+        	<img src="images/q.png">
+        	<div id="z" class="admin-panel" >Добавить новость</div>
+        	<div id="table" class="admin-panel">Изменить турнирную таблицу</div>
+        	<div id="calendar" class="admin-panel">Изменить календар</div>
+        	<div id="slaider" class="admin-panel">Изменить слайдер</div>
+        	<div id="gamer" class="admin-panel">Добавить игрока</div>
+            <div id="allnews" class="admin-panel">Все новости</div>
+            <div id="changetable" class="admin-panel">Изменить турнирную таблицу</div>
+        </div>
+        <div class="menu-container">
+        	<div class="items-wrapper" id="news-id-wrapper">
+        		<div class="q">
+        			<input type="text" placeholder="Title news" id="titleNews">
+        			<textarea class="editor" id="news"></textarea>
+        			<textarea placeholder="Low news 130 simbol" id="lowNews"></textarea>
+        			<input type="file" name="" id="newsImg">
+                </div>
+                <div class="btn newsAdd">Send</div>
+        	</div>
+            <div class="items-wrapper" id="table-wrapper">
+                <input type="text" placeholder="Команда"class="" id="Tcommand">
+                <input type="text" placeholder="Игры"class="" id="Tgames">
+                <input type="text" placeholder="Выиграши"class="" id="Twin">
+                <input type="text" placeholder="Ничии"class="" id="Tdraw">
+                <input type="text" placeholder="Проигрыш"class="" id="Tloss">
+                <input type="text" placeholder="Забито"class="" id="Tculled">
+                <input type="text" placeholder="Пропущено"class="" id="Tomitted">
+                <input type="text" placeholder="Очки"class="" id="Tpoint">
+                <div class="btn" id="addTcommand">Добавить</div>
+            </div>
+            <div class="items-wrapper" id="calendar-wrapper">
+                <input type="text" placeholder="Команда"class="" id="Ccommandone">
+                <input type="text" placeholder="Счет"class="" id="Cscore">
+                <input type="text" placeholder="Команда"class="" id="Ccomandtwo">
+                <input type="text" placeholder="Турнир"class="" id="Ctourney">
+                <input type="text" placeholder="Стадия"class="" id="Cstage">
+                <input type="text" placeholder="Дата и время"class="" id="Cdate">
+                <div class="btn" id="addCcalendar">Добавить</div>
+            </div>
+            <div class="items-wrapper" id="slaider-wrapper">
+                <input type="file" name="" id="imgSlider">
+                <div class="btn" id="addSlaider">Добавить</div>
+            </div>
+            <div class="items-wrapper" id="games-wrapper">
+                <div class="Gcomand">Голкиперы  
+                    <div class="btnaddgames" id="Keeperbtn">+</div>
+                    <div class="newplayer">
+                        <input type="file" name="">
+                        <input type="text" placeholder="Номер" id="number">
+                        <input type="text" placeholder="Имя" id="name">
+                    </div>
+                </div>
+
+                <div class="Gcomand" id="back">Защитники 
+                    <div class="btnaddgames" id="Backbtn">+</div>
+                </div>
+                <div class="Gcomand" id="halfback">Полузащитники 
+                    <div class="btnaddgames" id="Halfbtn">+</div>
+                </div>
+                <div class="Gcomand" id="attack">Нападающие 
+                    <div class="btnaddgames" id="Forvardbtn">+</div>
+                </div>
+                <div class = "btn sendPlayer">send</div>
+            </div>
+                <div class="items-wrapper" id="addallnews">
+                    <div class="news">
+                        <div class="item">
+                            <div class="title">Title</div>
+                            <div class="btn edite">Edite</div>
+                            <div class="btn dellite">Delite</div>
+                        </div>  
+                    </div>
+                    <div class="btn" >Добавить</div>
+                </div>
+                <div class="items-wrapper" id="turtable">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <input type="text" placeholder="" class="" id="">
+                    <hr/>
+                    <div class="btn">Send</div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

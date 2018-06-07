@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Календарь</title>
+	<%-include('link')%>
+</head>
+<meta charset="utf-8">
+<body>
+	<%-include('header')%>
+<div class="new-informacion">
+	<h1>
+		Календар
+	</h1>
+	<table class="table">
+		<tr class="position">
+			<td colspan="3">Матч</td>
+			<td>Турнир</td>
+			<td>Стадия</td>
+			<td>Дата и время</td>
+		</tr>
+		<tr class="position2">
+			<%for(i in result){%>
+			<td><%-result[i].Ccommandone%>
+			</td>
+			<td>
+					<%-result[i].Cscore%>
+			</td>
+			<td><%-result[i].Ccomandtwo%>
+			</td>
+			<td><%-result[i].Ctourney%>
+			</td>
+			<td><%-result[i].Cstage%>
+			</td>
+			<td><%-result[i].Cdate%>
+			</td>
+			<%}%>
+		</tr>
+	</table>
+
+</div>
+	<%-include('footer')%>
+</body>
+</html>

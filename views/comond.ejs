@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Состав команды</title>
+	<%-include('link')%>
+</head>
+<meta charset="utf-8">
+<body>
+	<%-include('header')%>
+<div class="new-informacion">
+	<div class="content-player">
+		<div class="logo-comand">Голкиперы</div>
+		<%for(i=0;i<result.gate.length;i++){%>
+			<div class="player">
+				<div class="nomber"><%-result.gate[i].number%></div>
+				<img src="images/ospina.JPG">
+				<div class="info-player"><%-result.gate[i].name%></div>
+			</div>
+		<%}%>
+	</div>
+	<div class="content-player">
+		<div class="logo-comand">Защитники</div>
+		<%for(i=0;i<result.defender.length;i++){%>
+			<div class="player">
+				<div class="nomber"><%-result.defender[i].number%></div>
+				<img src="images/koscielny.JPG">
+				<div class="info-player"><%-result.defender[i].name%></div>
+			</div>
+		<%}%>
+	</div>
+	<div class="content-player">
+		<div class="logo-comand">Полузащитники</div>
+		<%for(i=0;i<result.hdefender.length;i++){%>
+		<div class="player">
+			<div class="nomber"><%-result.hdefender[i].number%></div>
+			<img src="images/ospina.JPG">
+			<div class="info-player"><%-result.hdefender[i].name%></div>
+		</div>
+		<%}%>
+	</div>
+	<div class="content-player">
+		<div class="logo-comand">Нападающие</div>
+		<%for(i=0;i<result.attack.length;i++){%>
+		<div class="player">
+			<div class="nomber"><%-result.attack[i].number%></div>
+			<img src="images/ospina.JPG">
+			<div class="info-player"><%-result.attack[i].name%></div>
+		</div>
+		<%}%>
+	</div>
+
+</div>
+<%-include('footer')%>	
+</body>
+</html>
