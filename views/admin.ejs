@@ -12,7 +12,7 @@
         <div class="admin" >
         	<img src="images/q.png">
         	<div id="z" class="admin-panel" >Добавить новость</div>
-        	<div id="table" class="admin-panel">Изменить турнирную таблицу</div>
+        	<div id="table" class="admin-panel">Добавить в турнирную таблицу</div>
         	<div id="calendar" class="admin-panel">Изменить календар</div>
         	<div id="slaider" class="admin-panel">Изменить слайдер</div>
         	<div id="gamer" class="admin-panel">Добавить игрока</div>
@@ -76,25 +76,29 @@
             </div>
                 <div class="items-wrapper" id="addallnews">
                     <div class="news">
-                        <div class="item">
-                            <div class="title">Title</div>
-                            <div class="btn edite">Edite</div>
-                            <div class="btn dellite">Delite</div>
-                        </div>  
+                        <%for(i in result.news){%>
+                            <div class="item">
+                                <div class="title"><%-result.news[i].title%></div>
+                                <div class="btn edite" data-id="<%-result.news[i]._id%>">Edite</div>
+                                <div class="btn dellite" data-id="<%-result.news[i]._id%>">Delite</div>
+                            </div>  
+                        <%}%>
                     </div>
                     <div class="btn" >Добавить</div>
                 </div>
                 <div class="items-wrapper" id="turtable">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <input type="text" placeholder="" class="" id="">
-                    <hr/>
-                    <div class="btn">Send</div>
+                    <%for(i in result.table){%>
+                        <input type="text"  value = "<%-result.table[i].Tcommand%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Tgames%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Twin%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Tdraw%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Tloss%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Tculled%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Tomitted%>" placeholder="" class="" id="">
+                        <input type="text"  value = "<%-result.table[i].Tpoint%>" placeholder="" class="" id="">
+                        <div class="btn dellTable" data-id="<%-result.table[i]._id%>">Delite</div>
+                    <%}%>
+                    <div class="btn tableEdit">Send</div>
                 </div>
         </div>
     </div>

@@ -144,6 +144,33 @@ exports.getTable = function(req,res){
     })
 }
 
+exports.getNewsTable = function(req,res){
+    data.getNewsTable(function(err,docs){
+        if(docs!="")
+            res.render('admin.ejs',{result:docs});
+        else
+            res.render('admin.ejs',{result:{}});
+    });
+}
+
+exports.dellTable = function(req,res){
+    data.dellTable(req.body.id,function(err,result){
+        if(result!="")
+            res.sendStatus(200);
+        else
+            res.sendStatus(500);
+    })
+}
+
+exports.dellNews = function(req,res){
+    data.dellNews(req.body.id,function(err,result){
+        if(result!="")
+            res.sendStatus(200)
+        else
+            res.sendStatus(500)
+    })
+}
+
 function fileSave(file,name){
     var b64Data = file.split(',')[1];
 	var buffer = new Buffer(b64Data,'base64');

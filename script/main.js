@@ -266,4 +266,29 @@ $(document).ready(function(){
             })
         }
     })
+//////////////////TABLE DELL//////////////////////////
+    $('.btn.dellTable').click(function(){
+            $.ajax({
+            url:'/dellTable',
+            type:'POST',
+            data:{
+                id:$(this).attr('data-id')
+            }
+        })
+    })
+//////////////////NEWS DELL//////////////////////////
+    $('.btn.dellite').click(function(){
+            $.ajax({
+            url:'/dellNews',
+            type:'POST',
+            data:{
+                id:$(this).attr('data-id')
+            }
+        })
+    })
+
 });
+
+
+
+

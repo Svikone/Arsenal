@@ -49,9 +49,7 @@ app.get('/history',function(req,res){
 app.get('/login',function(req,res){
     res.render('login.ejs',{});
 })
-app.get('/admin',checkAdmin,function(req,res){
-    res.render('admin.ejs',{});
-})
+app.get('/admin',checkAdmin,data.getNewsTable);
 
 app.post('/addPlayers',checkAdmin,data.addPlayers);
 
@@ -65,6 +63,9 @@ app.post('/addCalendar',checkAdmin,data.addCalendar);
 
 app.post('/addSlider',checkAdmin,data.addSlider);
 
+app.post('/dellTable',checkAdmin,data.dellTable);
+
+app.post('/dellNews',checkAdmin,data.dellNews)
 
 function checkAdmin(req,res,next){
     console.log(req.cookies.login);
