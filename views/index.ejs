@@ -11,17 +11,17 @@
 	<div class="informacion">
 		<!-- <img src="images/w.JPG"> -->
 		<div class="owl-carousel">
-		 	<img src="images/w.JPG">
-		 	<img src="images/e.JPG">
-		 	<img src="images/r.JPG">
+			<%for(i in result.slider){%>
+			 <img src="images/<%-result.slider[i].img%>">
+			 <%}%>
 		</div>
 		<div class="news">
-			<%for(i in result){%>
+			<%for(i in result.news){%>
 				<div class="item">
-					<img src="images/<%-result[i].img%>">
+					<img src="images/<%-result.news[i].img%>">
 					<div class="content">
-						<p><%-result[i].title%></p>
-						<h4><%-result[i].lowContent%></h4>
+						<p><%-result.news[i].title%></p>
+						<h4><%-result.news[i].lowContent%></h4>
 					</div>
 				</div>
 			<%}%>

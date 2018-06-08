@@ -106,7 +106,13 @@ exports.addSlider = function(img,cb){
 
 exports.getNews = function(cb){
     db.get().collection('news').find().toArray(function(err,res){
-        cb(err,res);
+        db.get().collection('slider').find().toArray(function(err1,res2){
+            var result = {
+                news:res,
+                slider:res2
+            }
+            cb(err1,result);
+        })
     });
 }
 

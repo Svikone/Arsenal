@@ -119,10 +119,17 @@ exports.addSlider = function(req,res){
 
 exports.getNews = function(req,res){
     data.getNews(function(err,docs){
-        if(docs!="")
-            res.render('index.ejs',{result:docs});
-        else
-            res.render('index.ejs',{result:{}});
+        if(req.url=="/"){
+            if(docs!="")
+                res.render('index.ejs',{result:docs});
+            else
+                res.render('index.ejs',{result:{}});
+        }
+        else if(req.url=="/news")
+            res.render('news.ejs',{result:docs});
+            else
+                res.render('news.ejs',{result:{}});
+        
     })
 }
 

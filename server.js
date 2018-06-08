@@ -37,9 +37,7 @@ app.get('/comond',data.getComand);
 app.get('/calendar',data.getCalendar);
 
 
-app.get('/news',function(req,res){
-    res.render('news.ejs',{});
-})
+app.get('/news',data.getNews);
 
 app.get('/table',data.getTable);
 
