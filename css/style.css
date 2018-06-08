@@ -159,6 +159,7 @@ footer{
 }
 .news-content{
 	color:white;
+	text-align:justify;
 }
 .news-item{
 	margin: auto;
@@ -168,8 +169,7 @@ footer{
     padding-top: 10px;
 }
 .news-item p{
-	text-align:center;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: Verdana, sans-serif;
 	padding: 3px;
 	color: white;
