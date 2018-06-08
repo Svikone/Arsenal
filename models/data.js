@@ -105,7 +105,7 @@ exports.addSlider = function(img,cb){
 }
 
 exports.getNews = function(cb){
-    db.get().collection('news').find().toArray(function(err,res){
+    db.get().collection('news').find().sort({ $natural: -1 }).toArray(function(err,res){
         db.get().collection('slider').find().toArray(function(err1,res2){
             var result = {
                 news:res,

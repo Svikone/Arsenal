@@ -17,13 +17,15 @@
 		</div>
 		<div class="news">
 			<%for(i in result.news){%>
-				<div class="item">
-					<img src="images/<%-result.news[i].img%>">
-					<div class="content">
-						<p><%-result.news[i].title%></p>
-						<h4><%-result.news[i].lowContent%></h4>
+				<%if(i<=2){%>
+					<div class="item">
+						<img src="images/<%-result.news[i].img%>">
+						<div class="content">
+							<p><%-result.news[i].title%></p>
+							<h4><%-result.news[i].lowContent%></h4>
+						</div>
 					</div>
-				</div>
+				<%}%>
 			<%}%>
 			</div>
 		</div>

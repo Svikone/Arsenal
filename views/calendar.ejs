@@ -18,8 +18,8 @@
 			<td>Стадия</td>
 			<td>Дата и время</td>
 		</tr>
+		<%for(i in result){%>
 		<tr class="position2">
-			<%for(i in result){%>
 			<td><%-result[i].Ccommandone%>
 			</td>
 			<td>
@@ -33,8 +33,8 @@
 			</td>
 			<td><%-result[i].Cdate%>
 			</td>
-			<%}%>
 		</tr>
+		<%}%>
 	</table>
 
 </div>
